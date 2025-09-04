@@ -11,8 +11,8 @@ if (APPLE AND CMAKE_OSX_ARCHITECTURES)
 endif ()
 
 phrozenorca_add_cmake_project(Boost
-    URL "https://github.com/boostorg/boost/releases/download/boost-1.84.0/boost-1.84.0.zip"
-    URL_HASH SHA256=f46e9a747e0828130d37ead82b796ab82348e3a7ee688cd43b6c5f35f5e71aef
+    URL "https://github.com/boostorg/boost/releases/download/boost-1.84.0/boost-1.84.0.tar.gz"
+    URL_HASH SHA256=4d27e9efed0f6f152dc28db6430b9d3dfb40c0345da7342eaa5a987dde57bd95
     LIST_SEPARATOR |
     CMAKE_ARGS
         -DBOOST_EXCLUDE_LIBRARIES:STRING=contract|fiber|numpy|stacktrace|wave|test
