@@ -116,8 +116,8 @@ jobs:
       if: ${{github.ref == 'refs/heads/main'}}
       uses: WebFreak001/deploy-nightly@v3.2.0
       with:
-        upload_url: https://uploads.github.com/repos/MaxShih147/OrcaSlicer/releases/243394331/assets{?name,label}
-        release_id: 243394331
+        upload_url: https://uploads.github.com/repos/Chloe-Phrozen/OrcaSlicer-CITest/releases/244953882/assets{?name,label}
+        release_id: 244953882
         asset_path: /__w/PhrozenOrca/PhrozenOrca/PhrozenOrca-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak
         asset_name: PhrozenOrca-Linux-flatpak_${{ env.ver }}_${{ matrix.variant.arch }}.flatpak
         asset_content_type: application/octet-stream
