@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build (Windows + macOS)
+    name: Build
     strategy:
       fail-fast: false
       matrix:
@@ -35,6 +35,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4 
       - name: Download all build artifacts
         uses: actions/download-artifact@v4
         with:
